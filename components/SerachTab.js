@@ -1,14 +1,14 @@
 import React from 'react';
 import {StyleSheet, Button, View, Text} from 'react-native';
 
-function SearchScreen({navigation}) {
+function SearchTab({navigation}) {
     return (
         <View style={styles.container}>
-            <Text>This is Search Screen</Text>
-            <Button
-                title="Back To Post List"
-                onPress={() => navigation.navigate('PostList', {name: 'Jane'})}
-            />
+            <Text>Search Screen</Text>
+            {/*<Button*/}
+            {/*    title="Back To Post List"*/}
+            {/*    onPress={() => navigation.navigate('PostList', {name: 'Jane'})}*/}
+            {/*/>*/}
         </View>
     );
 }
@@ -22,4 +22,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default SearchScreen;
+export default SearchTab;

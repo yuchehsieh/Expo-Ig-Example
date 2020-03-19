@@ -2,21 +2,26 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import 'react-native-gesture-handler';
-import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
+import { createStackNavigator } from '@react-navigation/stack';
+import ChatListScreen from "./components/ChatListScreen";
+import MainTabs from "./components/MainTabs";
 
-import MainScreen from './components/MainScreen';
-import SearchScreen from "./components/SerachScreen";
-
-const Tab = createBottomTabNavigator();
+const RootStack = createStackNavigator();
 
 export default function App() {
   return (
-
       <NavigationContainer>
-          <Tab.Navigator>
-              <Tab.Screen name="MainScreen" component={MainScreen} options={{title: 'Main-Screen'}}/>
-              <Tab.Screen name="SearchScreen" component={SearchScreen} options={{title: 'Search-Screen'}}/>
-          </Tab.Navigator>
+          <RootStack.Navigator>
+              <RootStack.Screen name="MainTabs" component={MainTabs}/>
+              <RootStack.Screen
+                  name="ChatListScreen"
+                  component={ChatListScreen}
+                  options={{
+                      title: 'Murphy',
+                      headerBackTitle: ' '
+                  }}
+              />
+          </RootStack.Navigator>
       </NavigationContainer>
   );
 }

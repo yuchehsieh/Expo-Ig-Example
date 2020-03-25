@@ -1,11 +1,11 @@
 import React from 'react';
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet} from 'react-native';
 import 'react-native-gesture-handler';
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
-import FoundationIcon  from '@expo/vector-icons/Foundation';
-import EvilIconsIcon  from '@expo/vector-icons/EvilIcons';
-import IoniIcon  from '@expo/vector-icons/Ionicons';
-import FontAwesomeIcon  from '@expo/vector-icons/FontAwesome';
+import FoundationIcon from '@expo/vector-icons/Foundation';
+import EvilIconsIcon from '@expo/vector-icons/EvilIcons';
+import IoniIcon from '@expo/vector-icons/Ionicons';
+import FontAwesomeIcon from '@expo/vector-icons/FontAwesome';
 import PostListTab from "./PostListTab";
 import SearchTab from "./SerachTab";
 import AddTab from "./AddTab";

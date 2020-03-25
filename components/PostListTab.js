@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, StyleSheet, Text, View, Image, Dimensions, ScrollView, FlatList} from "react-native";
+import {Dimensions, FlatList, Image, StyleSheet, Text, View} from "react-native";
 import Ionicons from '@expo/vector-icons/Ionicons';
 import EvilIcons from '@expo/vector-icons/EvilIcons';
 
@@ -133,6 +133,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'flex-start',
+        paddingTop: 20,
     },
     postContainer: {
         flexDirection: 'column',
